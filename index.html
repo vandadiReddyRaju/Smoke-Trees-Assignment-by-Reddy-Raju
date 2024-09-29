@@ -1,35 +1,18 @@
+<!--  To take name and address i created form in html and performed CRUD operations to save the data in database -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>User Registration</title>
+    <title>Smoke Trees User Registration</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <style>
-        body {
-            background-color: #f8f9fa; /* Light gray background */
-        }
-        .container {
-            margin-top: 50px;
-            padding: 20px;
-            background-color: #ffffff; /* White background for form */
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        #addresses {
-            display: none; /* Initially hide the addresses */
-            margin-top: 20px;
-        }
-        .btn-custom {
-            background-color: #007bff; /* Bootstrap primary blue */
-            color: white;
-        }
-    </style>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
 
-<div class="container">
-    <h2 class="text-center">User Registration</h2>
+<div class="container p-5">
+    <h2 class="text-center">Smoke Trees User Registration</h2>
     <form id="registration-form">
         <div class="form-group">
             <label for="name">Name</label>
@@ -39,12 +22,12 @@
             <label for="address">Address</label>
             <input type="text" class="form-control" name="address" placeholder="Enter your address" required>
         </div>
-        <button type="submit" class="btn btn-custom">Register</button>
+        <button type="submit" class="btn btn-custom btn-primary">Register</button>
     </form>
 
     <div class="mt-4">
         <h3>Saved Addresses</h3>
-        <button id="toggle-button" class="btn btn-custom">Show </button>
+        <button id="toggle-button" class="btn btn-custom btn-primary">Show </button>
         <div id="addresses">
             <ul id="address-list" class="list-group mt-2"></ul>
         </div>
